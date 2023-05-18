@@ -1,0 +1,31 @@
+.item-feedback {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+  background: #c5e6e7;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #000 !important;
+}
+
+.item-feedback .content {
+  font-size: 20px;
+}
+
+.item-feedback .action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action i {
+  font-size: 25px;
+  color: blue;
+}
+
+.action i:hover {
+  cursor: pointer;
+}
