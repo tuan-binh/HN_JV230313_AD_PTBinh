@@ -6,7 +6,7 @@ import Form from "./Form/Form";
 
 function ParentComponent({ handleToggle }) {
   const [list, setList] = useState([
-    { text: "minh cường và hoàng phú", time: "18/05/2023" },
+    { text: "Feedback về anh bách cọp :)))~", time: "18/05/2023" },
   ]);
 
   const [text, setText] = useState("");
