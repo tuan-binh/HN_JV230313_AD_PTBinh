@@ -2,6 +2,15 @@ import React from "react";
 import "./Form.css";
 
 function Form({ handleChangeText, handleAddFeedback, char, text }) {
+  function result() {
+    let result = 0;
+    result = 200 - char;
+    if (result > 0) {
+      return result;
+    } else {
+      return 0;
+    }
+  }
   return (
     <div className="form-feedback">
       <textarea
@@ -12,7 +21,7 @@ function Form({ handleChangeText, handleAddFeedback, char, text }) {
         value={text}
       ></textarea>
       <div onClick={handleAddFeedback} className="action-form">
-        <p>{200 - char} left</p>
+        <p>{result()} left</p>
         <p>
           PUBLISH <i className="fa-solid fa-arrow-up"></i>
         </p>

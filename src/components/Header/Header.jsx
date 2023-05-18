@@ -5,7 +5,7 @@ function Header({ handleToggle }) {
   return (
     <div className="flex-header">
       <h1>
-        Reviews TA Béc Cọp !!! <i class="fa-solid fa-square-xmark"></i>{" "}
+        Reviews TA Béc Cọp !!! <i className="fa-solid fa-square-xmark"></i>{" "}
       </h1>
       <p>
         <i

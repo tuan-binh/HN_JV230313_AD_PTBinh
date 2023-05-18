@@ -23,7 +23,7 @@ function ParentComponent({ handleToggle }) {
     let day = time.getDate();
     let month = time.getMonth() + 1;
     let year = time.getFullYear();
-    if (text !== "") {
+    if (text !== "" && text.length <= 200) {
       setList([...list, { text: text, time: `${day}/${month}/${year}` }]);
       setText("");
       setChar(0);
